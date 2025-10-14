@@ -59,10 +59,11 @@ const Upload = () => {
     setIsAnalyzing(true);
     
     try {
+      const apiBase = (import.meta as any).env?.VITE_BACKEND_URL || "http://127.0.0.1:8000";
       const formData = new FormData();
       formData.append("file", file);
 
-      const response = await fetch("http://127.0.0.1:8000/predict", {
+      const response = await fetch(`${apiBase}/predict`, {
         method: "POST",
         body: formData,
       });

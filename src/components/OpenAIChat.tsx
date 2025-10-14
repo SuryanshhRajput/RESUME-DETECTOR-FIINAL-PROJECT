@@ -30,8 +30,9 @@ const OpenAIChat = ({ isOpen, onClose }: OpenAIChatProps) => {
     setIsLoading(true);
 
     try {
+      const apiBase = (import.meta as any).env?.VITE_BACKEND_URL || 'http://127.0.0.1:8000';
       // Prefer calling our backend so API key can be stored server-side via .env
-      const response = await fetch('http://127.0.0.1:8000/chat', {
+      const response = await fetch(`${apiBase}/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
