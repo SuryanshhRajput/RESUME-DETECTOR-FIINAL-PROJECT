@@ -102,8 +102,8 @@ const Upload = () => {
       <Navbar />
       <ChatbotIcon />
       
-      <div className="pt-24 pb-16">
-        <div className="container mx-auto px-6">
+      <div className="pt-20 sm:pt-24 pb-14 sm:pb-16">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-8">
               <h1 className="text-4xl font-bold mb-4">
@@ -127,8 +127,8 @@ const Upload = () => {
                   onDrop={handleDrop}
                 >
                   <div className="mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-r from-gradient-from to-gradient-via rounded-2xl flex items-center justify-center mx-auto mb-4">
-                      <UploadIcon className="h-8 w-8 text-white" />
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-gradient-from to-gradient-via rounded-2xl flex items-center justify-center mx-auto mb-4">
+                      <UploadIcon className="h-7 w-7 sm:h-8 sm:w-8 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Upload Your Resume</h3>
                     <p className="text-muted-foreground mb-4">
@@ -145,7 +145,7 @@ const Upload = () => {
                   />
                   <Button
                     asChild
-                    className="bg-gradient-to-r from-gradient-from to-gradient-via text-white shadow-glow hover:shadow-2xl transition-all duration-300"
+                    className="bg-gradient-to-r from-gradient-from to-gradient-via text-white shadow-glow hover:shadow-2xl transition-all duration-300 px-5 py-3 sm:px-6"
                   >
                     <label htmlFor="file-upload" className="cursor-pointer">
                       Choose File
@@ -183,7 +183,7 @@ const Upload = () => {
                   <Button
                     onClick={handleAnalyze}
                     disabled={isAnalyzing}
-                    className="w-full bg-gradient-to-r from-gradient-from to-gradient-via text-white shadow-glow hover:shadow-2xl transition-all duration-300 py-6 text-lg"
+                    className="w-full bg-gradient-to-r from-gradient-from to-gradient-via text-white shadow-glow hover:shadow-2xl transition-all duration-300 py-5 sm:py-6 text-base sm:text-lg"
                   >
                     {isAnalyzing ? (
                       <>

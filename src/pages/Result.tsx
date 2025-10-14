@@ -59,8 +59,8 @@ const Result = () => {
       <Navbar />
       <ChatbotIcon />
       
-      <div className="pt-24 pb-16">
-        <div className="container mx-auto px-6">
+      <div className="pt-20 sm:pt-24 pb-14 sm:pb-16">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
               <div className="inline-flex items-center space-x-2 glass-card py-2 px-4 mb-4">
@@ -76,7 +76,7 @@ const Result = () => {
               </p>
             </div>
 
-            <div className="grid gap-8 mb-8">
+            <div className="grid gap-6 sm:gap-8 mb-8">
               {/* Main Prediction Card */}
               <Card className="glass-card relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-gradient-from/20 to-transparent rounded-bl-full"></div>

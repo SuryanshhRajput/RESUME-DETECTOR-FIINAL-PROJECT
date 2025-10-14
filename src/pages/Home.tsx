@@ -11,8 +11,8 @@ const Home = () => {
       <ChatbotIcon />
       
       {/* Hero Section */}
-      <div className="pt-24 pb-16">
-        <div className="container mx-auto px-6 text-center">
+      <div className="pt-20 sm:pt-24 pb-14 sm:pb-16">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8 float">
               <div className="inline-flex items-center space-x-2 glass-card py-2 px-4 mb-6">
@@ -32,11 +32,11 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-14 sm:mb-16">
               <Button
                 size="lg"
                 asChild
-                className="bg-gradient-to-r from-gradient-from to-gradient-via text-white shadow-glow hover:shadow-2xl transition-all duration-300 px-8 py-6 text-lg rounded-2xl"
+                className="bg-gradient-to-r from-gradient-from to-gradient-via text-white shadow-glow hover:shadow-2xl transition-all duration-300 px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg rounded-2xl"
               >
                 <Link to="/upload" className="flex items-center space-x-2">
                   <Upload className="h-5 w-5" />
@@ -48,7 +48,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 asChild
-                className="glass border-border/50 text-foreground hover:bg-secondary/20 px-8 py-6 text-lg rounded-2xl transition-all duration-300"
+                className="glass border-border/50 text-foreground hover:bg-secondary/20 px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg rounded-2xl transition-all duration-300"
               >
                 <Link to="/about" className="flex items-center space-x-2">
                   <Brain className="h-5 w-5" />
@@ -61,8 +61,8 @@ const Home = () => {
       </div>
 
       {/* Features Section */}
-      <div className="py-16">
-        <div className="container mx-auto px-6">
+      <div className="py-14 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 gradient-text">How It Works</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -105,8 +105,8 @@ const Home = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="py-16">
-        <div className="container mx-auto px-6">
+      <div className="py-14 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="glass-card max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
@@ -127,7 +127,7 @@ const Home = () => {
       </div>
       {/* Footer Credit */}
       <div className="pb-6">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <p className="text-center text-sm text-muted-foreground">developed by "SUZAIN KHAN"</p>
         </div>
       </div>
